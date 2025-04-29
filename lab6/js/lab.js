@@ -1,21 +1,25 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Transportation list
+let myTransport = ["Toyota GT86", "Walking", "Bus", "Rides from friends"];
 
-// Constants
+// Main ride object
+let myMainRide = {
+    make: "Toyota",
+    model: "GT86",
+    color: "Pearl",
+    year: 2022,
+    age: function () {
+        return 2025 - this.year;
+    }
+};
 
-// Functions
+// Write to #output div
+function outputToPage() {
+    const outputEl = document.getElementById("output");
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+    outputEl.innerHTML += "Kinds of transportation I use: " + myTransport.join(", ") + "<br><br>";
+    outputEl.innerHTML += "My Main Ride: <pre>" + JSON.stringify(myMainRide, null, 2) + "</pre>";
+    outputEl.innerHTML += "Age of my car in 2025: " + myMainRide.age() + " years old.<br>";
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Call function when page loads
+window.onload = outputToPage;
