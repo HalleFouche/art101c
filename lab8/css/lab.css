@@ -1,0 +1,14 @@
+h1, h2, h3 {
+    font-family: 'Tangerine', cursive;
+  }
+  p {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+  .minor-section {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: solid 1px #fffff7;
+      background-color: #fff7e3;
+    }
