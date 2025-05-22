@@ -12,9 +12,9 @@ function sortingHat(str) {
     if (mod === 0) {
         return "Hufflepuff";
     } else if (mod === 1) {
-        return "Ravenclaw";
-    } else if (mod === 2) {
         return "Gryffindor";
+    } else if (mod === 2) {
+        return "Ravenclaw";
     } else if (mod === 3) {
         return "Slytherin";
     }
