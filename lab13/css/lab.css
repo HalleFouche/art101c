@@ -1,0 +1,46 @@
+/* Font styles for headings */
+h1, h2, h3 {
+    font-family: 'Tangerine', cursive;
+}
+
+/* Font style for paragraphs */
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Styling for sections with the 'minor-section' class */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #fffff7;
+    background-color: #fff7e3;
+}
+
+/* Wrapper to center the output grid container */
+.output-wrapper {
+    text-align: center; /* Centers the inline-grid container */
+}
+
+/* Style the output div to show items in neat columns and center them */
+#output {
+    display: inline-grid; /* Shrink-wrap the grid container */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px 16px;
+    padding: 10px;
+    background-color: #fff7e3; /* matching your minor-section bg */
+    border: 1px solid #fffff7; /* matching your minor-section border */
+    max-width: 700px;  /* Optional: limits width for better readability */
+}
+
+/* Style each paragraph inside output */
+#output p {
+    margin: 0;
+    padding: 6px 8px;
+    background-color: #fffff7; /* subtle light background */
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    font-family: 'Cormorant Garamond', serif; /* ensure consistent font */
+}
